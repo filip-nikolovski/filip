@@ -75,6 +75,20 @@ $(document).ready(function(){
         $("#awHeader").removeClass("projectHedHover").addClass("projectHed");
     });
 
+    $("#qr").hover(function () {
+        $("#overlayQr").show(300);
+        //  $("#overlayAw").css("display", "block");
+        $("#imgQr").animate({ opacity: .3 }, 300);
+        // $("#imgAw").css("opacity", ".3");
+        $("#qrHeader").removeClass("projectHed").addClass("projectHedHover");
+    }, function () {
+        // $("#overlayAw").css("display", "none");
+        $("#overlayQr").hide(300);
+        //$("#imgAw").css("opacity", "1");
+        $("#imgQr").animate({ opacity: 1 }, 300);
+        $("#qrHeader").removeClass("projectHedHover").addClass("projectHed");
+    });
+
     $("#home").on("click", function () {
         // $(window).scrollTo("divAbout", 800);
         $('html, body').animate({ scrollTop: 0 }, 800);
