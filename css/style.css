@@ -28,6 +28,7 @@ summary {
 h1 {   
  
   font-size: 1.5em;
+ 
 }
 
 h2 {
@@ -99,7 +100,7 @@ height:100%;
 header{
 
 padding: 1%;
-height:15%;
+
 background-color: green;
 padding-top:2%;
 width:100%;
@@ -108,19 +109,15 @@ z-index:1;
 }
 
 #navigation {
-    bottom:0;
-    margin-bottom:0;
+    top:0;
+    margin-top:0;
     float:right;
-    width:60%;
+    width:49%;
 }
 
-footer{
-height:20%;
-}
 
 #logo{
 float:left;
-
 padding-left:1%;
 
 }
@@ -129,7 +126,7 @@ padding-left:1%;
 float: right;
 margin-right:5%;
 font-size: 1.3em;
-bottom:0;
+top:0;
 
 }
 .nav-item{
@@ -149,7 +146,7 @@ section{
 
    
   
-    padding-top:10%;
+    padding-top:15%;
     width:100%;
     background: #ebe8d9;
    
@@ -173,6 +170,8 @@ section{
      display: -webkit-box;
     -webkit-box-orient: horizontal;
     -ms-orient:horizontal; 
+
+  
 }
 
 
@@ -271,6 +270,40 @@ section{
     transition: all 0.5s ease;*/
 
 }
+#profileImage {
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
+.imageProfile {
+    width:10em;
+    height:10em;
+    top:0;
+    float:left;
+    margin-bottom:-0.7em;
+}
+
+.imageProfileHide {
+     width:0em;
+    height:0em;
+    top:0;
+    float:left;
+  
+    
+    
+}
+
+.spanShow {
+     padding-top:0.5em;
+width:50%;
+}
+#spanHide {
+width:100%;
+
+}
+
 
 .projectHed {
     position: absolute;
@@ -286,6 +319,7 @@ section{
 
     font-weight:900;
    color:white;
+   
 }
 .projectHedHover {
     height:2.5em;
@@ -331,23 +365,28 @@ color: #fff;
 .projectLink {
     margin:.1em;
     padding:.3em;
-background-color:  rgba(0,0,0,.85);
+    background-color:  rgba(0,0,0,.85);
 
-border-radius: 0.3em;
+    border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     -webkit-border-radius: 0.3em;
 
-   color:white;
+    color:white;
 }
 
 #divAbout {
     width:90%;
     padding:2em;
-
+    
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    
 }
 
 #aboutMe {
     padding:2em 5em;
+ 
 }
 
 #divImage {
@@ -356,6 +395,7 @@ border-radius: 0.3em;
      background-color:#d3d0c3;
      float:left;
     margin-right:2em; 
+
 }
 
 #myImage {
@@ -369,7 +409,7 @@ text-align:left;
 padding-top:1em;
 margin-left:17em;
 width:55%;
-
+ 
 }
 
 .personalInfo {
@@ -389,20 +429,65 @@ text-align:center;
 background-color:green;
 }
 
-.imageProfile {
-    width:10em;
-    height:10em;
-    top:0;
-    float:left;
-}
+
 #logo span {
+    display:inline-block;
     font-size:.7em;
     padding:.4em;
     background-color:#d3d0c3;
-    margin: 0em 0.2em;
+    margin: 0.2em 0.2em;
 
     
        border-radius: 0.3em;
     -moz-border-radius: 0.3em;
     -webkit-border-radius: 0.3em;
+}
+
+.iconImg{
+    width :1em; 
+    height:1em;
+    margin:0 .3em;
+}
+
+.iconImgClass {
+    display:block;
+margin:.2em .4em;
+vertical-align:central;
+}
+
+.iconImgClass :hover{
+  
+    text-align:left;
+}
+#divSkills {
+margin-bottom:17em;
+
+}
+.skills {
+    background-color:rgba(0,0,0,.35);
+    border-radius:15px 15px 15px 15px   ;
+    -moz-border-radius:15px 15px 15px 15px   ;
+    -webkit-border-radius:15px 15px 15px 15px   ;
+
+     text-align:left;
+     padding:0 1em;
+     margin-top:2em;
+
+     webkit-box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.3);
+box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.3);
+     
+}
+
+#personalSkills {
+
+    float:left; 
+width:30%;
+height:15em;
+  
+}
+#profesionalSkills {
+    float:right;
+    width:60%;
+    height:15em;
 }

@@ -2,16 +2,20 @@ function main(){
 
 }
 
+
+
 $(window).scroll(function(){
     if($(window).scrollTop() > 0) {
       $("header").addClass('shadow');
-   
+    
+      $("#profileImage").removeClass('imageProfile').addClass('imageProfileHide');
+      $("#divSpan").removeClass('spanShow').addClass('spanHide');
     } else {
         
-         //$("header").animate({
-         //       "padding-top": "5%"
-         //   }, 300);
-        //  alert("top");
+        $("#profileImage").removeClass('imageProfileHide').addClass('imageProfile');
+        $("#divSpan").removeClass('spanHide').addClass('spanShow');
+       
+        
          $("header").removeClass('shadow');
     }
 
@@ -23,26 +27,14 @@ $(window).scroll(function(){
 });
 
 
-var lastScrollTop = 0;
-$(window).scroll(function (event) {
-    var st = $(this).scrollTop();
-    //if (st > lastScrollTop) {
-    //    $("header").animate({
-    //        "padding-top": "1%"
-    //    }, 300);
-    //}
-    //else {
-    //    $("header").animate({
-    //        "padding-top": "5%"
-    //    }, 300);
-    //}
-    lastScrollTop = st;
-});
 
 
 
 
-$(document).ready(function(){
+$(document).ready(function () {
+
+
+   
 
     var doc = $(document);
 
@@ -98,20 +90,20 @@ $(document).ready(function(){
 
     $("#about").on("click", function () {
        // $(window).scrollTo("divAbout", 800);
-        $('html, body').animate({ scrollTop: $("#divAbout").offset().top - 50 }, 800);
+        $('html, body').animate({ scrollTop: $("#divAbout").offset().top -100}, 800);
 
     });
 
 
     $("#projects").on("click", function () {
         // $(window).scrollTo("divAbout", 800);
-        $('html, body').animate({ scrollTop: $("#myProjects").offset().top - 100 }, 800);
+        $('html, body').animate({ scrollTop: $("#myProjects").offset().top - 150 }, 800);
 
     });
    
     $("#skills").on("click", function () {
         // $(window).scrollTo("divAbout", 800);
-        $('html, body').animate({ scrollTop: $("#divSkills").offset().top - 100 }, 800);
+        $('html, body').animate({ scrollTop: $("#divSkills").offset().top - 110 }, 800);
 
     });
 

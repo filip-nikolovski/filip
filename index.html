@@ -14,38 +14,38 @@
     <form>
         <header>
             <div id="logo">
-                
-                <div style="float:right;">
-                    <img src="Images/Profile.jpg" class="imageProfile"   />
-                    <div style="float:right;padding: 0 .5em ">
-                        <h1>Filip Nikolovski</h1>
-                        <span>Web</span><span>.Net</span><span>HTML5</span><span>CSS</span><span>Javascript</span> <br />
-                        <span>jQUery</span><span>Sql</span><span>MySql</span>
-                        <span>Java</span> <span>C++</span> <span>Ajax</span> <span>XML</span>
-                    </div>   
-                </div>   
+                <img id="profileImage" src="Images/Profile.jpg" class="imageProfile" />
+                <div style="float:right;padding: 0em 0.5em ">
+                    <h1>Filip Nikolovski</h1>
+                    <div id="divSpan" class="spanShow">
+                        <span>Web</span><span>.Net</span><span>HTML5</span><span>CSS</span><span>Javascript</span>
+                        <span>jQUery</span><span>Sql</span><span>MySql</span><span>Java</span> <span>C++</span>
+                        <span>Ajax</span> <span>XML</span>
+                    </div>
+                </div>
             </div>
             <div id="navigation">
                 <ul id="nav">
-                    <li> <a href="#" class="nav-item" id="home">Home</a></li>
+                    <li> <a href="#Home" class="nav-item" id="home">Home</a></li>
                     <li><a href="#Projects" class="nav-item" id="projects">Projects</a></li>
-                    <li><a href="#" class="nav-item" id="about">About me</a></li>
-                    <li><a href="#" class="nav-item" id="skills">Skills</a></li>
+                    <li><a href="#About" class="nav-item" id="about">About me</a></li>
+                    <li><a href="#Skills" class="nav-item" id="skills">Skills</a></li>
                 </ul>
             </div>
         </header>
 
         <section>
             <div id="divProjects">
-                <h2>My projects</h2><hr />
+                <h2>My projects</h2>
                 <div id="myProjects">
 
                     <div class="singleProject1" id="">
                         <div class="overlay" id="infoProjects" style="display:block">
-                            <h2 class="projectHeder" >Projects</h2>
+                            <h2 class="projectHeder">Projects</h2>
                             <p style="padding:0em .5em; text-align:left">
                                 Preparation and participation in projects for the needs of the faculty: Android applications, web pages, web applications, databases, Java applications, animated videos, making programs for management and organization according to the e-business models etc.
-                            </p>  </div>
+                            </p>
+                        </div>
                     </div>
 
                     <div class="singleProject" id="msw">
@@ -86,9 +86,15 @@
                 </div>
             </div>
             <div id="divAbout">
-               <h4 >About Me</h4><hr />
+                <h4>About Me</h4><hr />
                 <div id="aboutMe">
-                    <div id="divImage"><img id="myImage" src="Images/Profile.jpg" /><a href="#">filip.nikolovski.peh@gmail.com</a> </div>
+                    <div id="divImage">
+                        <img id="myImage" src="Images/Profile.jpg" /><br />
+                        <a href="#" class="projectLink iconImgClass"><img src="Images/email.png" class="iconImg" />Mail</a>
+                        <a href="#" class="projectLink iconImgClass"><img src="Images/github.png" class="iconImg" />GitHub</a>
+                        <a href="#" class="projectLink iconImgClass"><img src="Images/linkedin-icon-png-white.png" class="iconImg" />LinkedIn</a>
+                        <a href="#" class="projectLink iconImgClass"><img src="Images/twitter.png" class="iconImg" />Twitter</a>
+                    </div>
                     <div id="basicInfo">
                         <p>
                             <h2>Basic info</h2>
@@ -127,16 +133,16 @@
                         </p>
                     </div>
 
-                    <div id="projects" class="personalInfo">
+                    <!--<div id="projects" class="personalInfo">
                         <p>
                             <h2>Projects</h2>
                             Preparation and participation in projects for the needs of the faculty: Android applications, web pages, web applications, databases, Java applications, animated videos, making programs for management and organization according to the <br /> e-business models etc.
                             <a href="#">References to some projects</a>
                         </p>
-                    </div>
-                    <div id="divSkills" >
+                    </div>-->
+                    <div id="divSkills">
                         <h4 style="margin-top:1.3em">Skills</h4><hr />
-                        <div id="personalSkills" class="skills personalInfo">
+                        <div id="personalSkills" class="skills">
                             <h2>Personal Skills</h2>
                             <ul>
                                 <li>Creative</li>
@@ -147,47 +153,32 @@
                                 <li>Ambitious </li>
                                 <li>Decisiveness </li>
                                 <li>Communicative  </li>
-
                             </ul>
                         </div>
-                        <div id="profesionalSkills" class="personalInfo">
+                        <div id="profesionalSkills" class="skills">
                             <h2>Profesional Skills</h2>
                             <b>Program languages:</b> C++, C#, Java, HTML5, CSS, SQL, XML, asp.NET, MySql.<br />
-
                             <b> Basic knowledge of:</b> JavaScript, PHP, Ajax, jQuery.<br />
-
                             <b> Software:</b> Microsoft Office, Microsoft Visual Studio, Eclipse, NetBeans, Oracle Database Express Edition, Packet Tracer, Dreamweaver, Flash, Dia, Google Sketchup, Adobe Premiere
-
                         </div>
-
                     </div>
                     <div id="divExpirience" class="personalInfo">
                         <h2>Expirience</h2>
-
                         Two mounts as an intern responsible for promoting, maintaining and managing technical issues on  www.elancer.mk website platform.
-
                         One month internship in National Examinations Centre, responsible for performing administrative and technical tasks in web application for external testing for high school students.
-
-
                     </div>
-
                     <div id="divHobby" class="personalInfo">
                         <h2>Hobby</h2>
                         Reading, listening to music, playing basketball, web surfing, walking, mountain climbing, social games.
                     </div>
                 </div>
-
             </div>
-
-
         </section>
-
         <footer>
             <hr>
             Copy Right Filip Nikolovski 2014
         </footer>
     </form>
-
 </body>
 </html>
 
