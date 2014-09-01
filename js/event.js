@@ -8,9 +8,9 @@ $(window).scroll(function(){
    
     } else {
         
-         $("header").animate({
-                "padding-top": "5%"
-            }, 300);
+         //$("header").animate({
+         //       "padding-top": "5%"
+         //   }, 300);
         //  alert("top");
          $("header").removeClass('shadow');
     }
@@ -26,11 +26,11 @@ $(window).scroll(function(){
 var lastScrollTop = 0;
 $(window).scroll(function (event) {
     var st = $(this).scrollTop();
-    if (st > lastScrollTop) {
-        $("header").animate({
-            "padding-top": "1%"
-        }, 300);
-    }
+    //if (st > lastScrollTop) {
+    //    $("header").animate({
+    //        "padding-top": "1%"
+    //    }, 300);
+    //}
     //else {
     //    $("header").animate({
     //        "padding-top": "5%"
