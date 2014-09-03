@@ -30,7 +30,16 @@ $(document).ready(function () {
         $("header li a:first").addClass('current');
     }
 
-   
+       $("#nav a").on("click", function () {
+        var navHref = $(this).attr("href");
+        if (navHref == "#divHome") {
+            $('html, body').animate({ scrollTop: 0 }, 800);
+        } else {
+            $('html, body').animate({ scrollTop: $(navHref).offset().top - 100 }, 800);
+        }
+        
+
+    });
 
     var doc = $(document);
 
@@ -67,16 +76,7 @@ $(document).ready(function () {
 
 
 
-    $("#nav a").on("click", function () {
-        var navHref = $(this).attr("href");
-        if (navHref == "#divHome") {
-            $('html, body').animate({ scrollTop: 0 }, 800);
-        } else {
-            $('html, body').animate({ scrollTop: $(navHref).offset().top - 100 }, 800);
-        }
-        
 
-    });
 
 
 });
