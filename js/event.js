@@ -10,11 +10,13 @@ $(window).scroll(function(){
     
       $("#profileImage").removeClass('imageProfile').addClass('imageProfileHide');
       $("#divSpan").removeClass('spanShow').addClass('spanHide');
+	 
     } else {
         
         $("#profileImage").removeClass('imageProfileHide').addClass('imageProfile');
         $("#divSpan").removeClass('spanHide').addClass('spanShow');   
          $("header").removeClass('shadow');
+		 
     }
 });
 
@@ -28,16 +30,20 @@ $(document).ready(function () {
    
     if ($(window).scrollTop() == 0) {
         $("header li a:first").addClass('current');
+		
     }
 
        $("#nav a").on("click", function () {
         var navHref = $(this).attr("href");
         if (navHref == "#divHome") {
-            $('html, body').animate({ scrollTop: 0 }, 800);
+            $('html, body').animate({ scrollTop: 0 }, 1000);
+			return false;
         } else {
+		
             $('html, body').animate({ scrollTop: $(navHref).offset().top - 100 }, 800);
+			return false;
         }
-        
+        return false;
 
     });
 
@@ -91,6 +97,7 @@ $(window).scroll(function () {
     if (windowTop <= 0) {
         $('#nav a.current').removeClass('current');
         $("header li a:first").addClass('current');
+		
     }
 
     $('.subSection').each(function (index) {
